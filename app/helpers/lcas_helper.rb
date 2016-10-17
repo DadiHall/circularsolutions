@@ -1,0 +1,2 @@
+module LcasHelper
+end

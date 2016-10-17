@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Green Accountings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @green_accountings.each do |green_accounting| %>
+      <tr>
+        <td><%= green_accounting.title %></td>
+        <td><%= green_accounting.body %></td>
+        <td><%= green_accounting.image %></td>
+        <td><%= link_to 'Show', green_accounting %></td>
+        <td><%= link_to 'Edit', edit_green_accounting_path(green_accounting) %></td>
+        <td><%= link_to 'Destroy', green_accounting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Green accounting', new_green_accounting_path %>

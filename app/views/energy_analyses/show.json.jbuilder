@@ -1,0 +1,1 @@
+json.partial! "energy_analyses/energy_analysis", energy_analysis: @energy_analysis

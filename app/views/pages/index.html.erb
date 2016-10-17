@@ -1,0 +1,240 @@
+<div class="bg-1">
+	<div class="container">
+	  <img  class="logo" src="assets/logo.svg">
+
+	  <p class="lead text-center">Green your business for growth</p> 
+
+
+	  <div class="col-md-4 col-md-offset-4">
+	  <p class="circular-text"> Circular Solutions is a focused consultancy emphasizing on environmental performance of firms. The primary focus of Circular is to assist firms in reaching their environmental performance goals. This can be done by using Life Cycle Assessments, green accounting or other forms of environmental performance assessments. The team at Circular consists of scientists and engineers with various backgrounds, who all have demonstrated scientific excellence internationally, for example by publishing scientific work in leading international journals. </p>
+
+	  </div>
+
+	</div>
+</div>
+
+
+<div class="bg-2">
+
+
+	<div class="container mission-wrapper">
+	  <hr class="">
+	        <h1 class="text-center mission-heading">Our Mission</h1>
+	          <p class="mission">The aim of Circular is to provide small and medium sized firms the ability to assess the environmental performance of their products, systems or services. By the means of life cycle assessment (LCA), and a solid foundation from the staff at Circular, we can help firms addressing sustainability issues. <br>
+	          Firms that have a strong sustainability policy have further more been shown to perform better than their counterparts economically, this is the result of many factors that eventually benefit the operations of firms.</p>
+
+	          <br>
+	
+	<hr class="">
+	</div>
+
+</div>
+
+
+
+<div class="bg-3">
+	<div class="container what-we-do-wrapper">
+
+	<h1 class="text-center heading-what-do-we-do">Field of profession</h1>
+
+	  <div class="row">
+	    <% @lcas.each do |lca| %>
+	      <div class="col-md-4">
+	           <div class="panel panel-default">
+	             <div class="panel-heading">
+	                <h3 class="panel-title"><%=lca.title %></h3>
+	             </div>
+	                <div class="panel-body">
+	                    <p><%= truncate(lca.body, length: 510)  { link_to "Continue", lca_path(lca) } %></p>      
+	                </div>
+
+	                
+	            </div>
+	      </div>
+	      <% end %>
+
+	    <% @energy_analyses.each do |energy_analysis| %>
+	       <div class="col-md-4 ">
+	           <div class="panel panel-default">
+	             <div class="panel-heading">
+	                <h3 class="panel-title"><%=energy_analysis.title %></h3>
+	             </div>
+	                <div class="panel-body">
+	                    <p><%= truncate(energy_analysis.body, length: 510)  { link_to "Continue", energy_analysis_path(energy_analysis) } %></p> 
+	                </div>
+	                
+	             
+	            </div>
+	      </div>
+
+	      <% end %>
+
+
+	    <% @green_accountings.each do |green_accounting| %>
+	       <div class="col-md-4 ">
+	           <div class="panel panel-default">
+	             <div class="panel-heading">
+	                <h3 class="panel-title"><%=green_accounting.title %></h3>
+	             </div>
+	                <div class="panel-body">
+	                    <p><%= truncate(green_accounting.body, length: 510)  { link_to "Continue", green_accounting_path(green_accounting) } %></p> 
+	                </div>
+	            </div>
+	      </div>
+
+	     <% end %>
+	    
+	    </div>
+		
+
+	</div>
+
+</div>
+
+
+
+
+<div class="bg-4">
+
+
+   <div class="container ems-wrapper">
+
+	<h1 class="text-center heading-ems">Environmental Management System</h1>
+
+	<p class="lead-ems">- Circular Solutions are building a revolutionary green accounting program that helps companies and institutions to achieve their goals in managing their environmental impact. -
+  <div class="row">
+	<div class="col-md-4">
+	           <div class="panel panel-default">
+	             <div class="panel-heading">
+	                <h3 class="panel-title">Green Accounting</h3>
+	             </div>
+	                <div class="panel-body">
+	                    <p>Neutra chillwave small batch, tacos artisan listicle forage crucifix austin quinoa. Banjo mustache humblebrag keytar beard pinterest. Locavore austin keffiyeh, sriracha tbh 3 wolf moon kinfolk asymmetrical bespoke activated charcoal wolf kombucha flannel literally retro. Air plant tbh authentic poke. Woke activated charcoal chartreuse readymade biodiesel, fap kinfolk shoreditch bicycle rights squid air plant. Master cleanse cold-pressed hashtag lyft, jean shorts truffaut listicle art party. Hashtag copper mug beard man bun, lumbersexual coloring book hot chicken migas.</p>      
+	                </div>
+
+	                
+	            </div>
+	      </div>
+
+	      <div class="col-md-4">
+	           <div class="panel panel-default">
+	             <div class="panel-heading">
+	                <h3 class="panel-title">Green Accounting</h3>
+	             </div>
+	                <div class="panel-body">
+	                    <p>Neutra chillwave small batch, tacos artisan listicle forage crucifix austin quinoa. Banjo mustache humblebrag keytar beard pinterest. Locavore austin keffiyeh, sriracha tbh 3 wolf moon kinfolk asymmetrical bespoke activated charcoal wolf kombucha flannel literally retro. Air plant tbh authentic poke. Woke activated charcoal chartreuse readymade biodiesel, fap kinfolk shoreditch bicycle rights squid air plant. Master cleanse cold-pressed hashtag lyft, jean shorts truffaut listicle art party. Hashtag copper mug beard man bun, lumbersexual coloring book hot chicken migas.</p>      
+	                </div>
+
+	                
+	            </div>
+	      </div>
+
+	      <div class="col-md-4">
+	           <div class="panel panel-default">
+	             <div class="panel-heading">
+	                <h3 class="panel-title">Green Accounting</h3>
+	             </div>
+	                <div class="panel-body">
+	                    <p>Neutra chillwave small batch, tacos artisan listicle forage crucifix austin quinoa. Banjo mustache humblebrag keytar beard pinterest. Locavore austin keffiyeh, sriracha tbh 3 wolf moon kinfolk asymmetrical bespoke activated charcoal wolf kombucha flannel literally retro. Air plant tbh authentic poke. Woke activated charcoal chartreuse readymade biodiesel, fap kinfolk shoreditch bicycle rights squid air plant. Master cleanse cold-pressed hashtag lyft, jean shorts truffaut listicle art party. Hashtag copper mug beard man bun, lumbersexual coloring book hot chicken migas.</p>      
+	                </div>
+
+	                
+	            </div>
+	      </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="bg-5">
+
+
+ <div class="row">
+  <div class="col-sm-10 col-sm-offset-1 text-center">
+         <h1 class="team-lead">The Circular Team</h1>
+    </div>
+      <div class="container the-team">
+        <div class="col-sm-12 col-md-3  cv-box">
+             <h3>Birgir Örn Smárason, M.SC.</h3>
+
+                <img src="/assets/BOS.jpg" class="portfolio-img img-responsive">
+                <p class="cv">Birgir holds a B.Sc. in environmental planning from the agricultural university of Iceland. The holds a M.Sc. degree from the University of Iceland where he studied at the Environment and Natural Resource program. He is now about to finish his Ph.D. from the University of Iceland where he has also taught LCA. His main areas of study has been within life cycle assessments of aquaculture and bio economy. Birgir is also an active member of the Icelandic search and rescue (SAR) team and can often be found in high altitudes.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-3 cv-box">
+             <h3>Daði Hall, M.SC.</h3>
+
+                <img src="/assets/BOS.jpg" class="portfolio-img img-responsive">
+                <p class="cv">Birgir holds a B.Sc. in environmental planning from the agricultural university of Iceland. The holds a M.Sc. degree from the University of Iceland where he studied at the Environment and Natural Resource program. He is now about to finish his Ph.D. from the University of Iceland where he has also taught LCA. His main areas of study has been within life cycle assessments of aquaculture and bio economy. Birgir is also an active member of the Icelandic search and rescue (SAR) team and can often be found in high altitudes.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-3 cv-box">
+             <h3>Hafþór Ægir Sigurjónsson, Ph.D</h3>
+
+                <img src="/assets/Haf.png" class="portfolio-img img-responsive">
+                <p class="cv">Hafþór holds a B.Sc. degree in Civil Engineering from Reykjavik University and a M.Sc. degree in Mechanical Engineering from the Technical University of Denmark (DTU). Hafþór has done extensive research in optimization and comparative analysis of industrial processes using Life Cycle Assessment (LCA) methods. Along with doing his research work, he also teaches LCA at the University of Iceland, and has previously taught sustainable production at DTU. </p>
+        </div>
+
+        <div class="col-sm-12 col-md-3 cv-box">
+             <h3>Reynir Smári Atlason, Ph.D</h3>
+
+                <img src="/assets/Rey.png" class="portfolio-img img-responsive">
+                <p class="cv">Reynir holds a B.A. degree in product design from Curtin University of Technology. He also holds a M.Sc. and Ph.D. from the Environment and Natural Resource program at the University of Iceland. Reynir has studied Energy Return on Investment (EROI), innovation in the geothermal sector and sustainable product design. He has, like the other founders of Circular, taught LCA at the University of Iceland. Reynir is an avid sailor, his latest voyage was from the north coast of France, through the North Sea to Denmark, inside the Baltic Sea.</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<div class="bg-6">
+	<div class="container">
+
+	<h1 class="text-center contact-lead">Please Contact for More Information</h1>
+
+	 	<%= render 'contacts/form' %>
+
+	</div>
+</div>
+
+
+<footer>
+
+<div class="container">
+  <div class="row">
+	<div class="col-md-4">
+	<h3>Sign Up for Our Mailing List </h3>
+		<p>and we keep you posted</p>
+ 		<%= render 'emaillist/emaillist' %>
+
+ 	</div>
+
+ 	<div class="col-md-4">
+	<h3> Follow us on </h3>
+
+ 	</div>
+
+ 	<div class="col-md-4">
+	<h3> Navigate</h3>
+		<ul class="text-center footer-links">
+        <li><a href="#about">About <span class="sr-only">(current)</span></a></li>
+        <li><a href="#ems"> Ems</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#subscribe">Newsletter</a></li>
+
+
+       
+      </ul>
+ 	
+
+ 	</div>
+ </div>	
+</div>
+</footer>
+
+
+
+

@@ -1,0 +1,12 @@
+ <%= form_tag(" /emaillist/subscribe ", method: "post", id: "subscribe", remote: "true", class:"form-group") do -%>
+
+
+ <div class="subscribe-top">
+    <div >
+      <%= email_field(:email, :address, {id: "email", class: "form-control email-field col-xs-2", placeholder: "Email Address", required: true}) %>
+    
+      <%= submit_tag("Sign Up!", class: "btn btn-default") %>
+    </div>
+
+ </div>
+  <% end %>

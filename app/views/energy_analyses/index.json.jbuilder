@@ -1,0 +1,1 @@
+json.array! @energy_analyses, partial: 'energy_analyses/energy_analysis', as: :energy_analysis

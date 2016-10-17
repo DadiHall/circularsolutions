@@ -1,0 +1,1 @@
+json.partial! "lcas/lca", lca: @lca

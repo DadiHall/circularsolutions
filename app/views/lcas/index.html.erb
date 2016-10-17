@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lcas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lcas.each do |lca| %>
+      <tr>
+        <td><%= lca.title %></td>
+        <td><%= lca.body %></td>
+        <td><%= lca.image %></td>
+        <td><%= link_to 'Show', lca %></td>
+        <td><%= link_to 'Edit', edit_lca_path(lca) %></td>
+        <td><%= link_to 'Destroy', lca, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lca', new_lca_path %>

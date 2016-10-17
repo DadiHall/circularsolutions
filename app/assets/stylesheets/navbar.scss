@@ -1,0 +1,39 @@
+/** NAVBAR **/
+
+.navbar {
+transition-duration: 1s;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border: none;
+   border-color: transparent;
+}
+
+.navbar li a{ 
+color: #fff; 
+
+} 
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a {
+   
+    color: #2e4c5d;
+    letter-spacing: .2em;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   
+    color: #555;
+}

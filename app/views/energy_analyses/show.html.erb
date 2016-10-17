@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @energy_analysis.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @energy_analysis.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @energy_analysis.image %>
+</p>
+
+<%= link_to 'Edit', edit_energy_analysis_path(@energy_analysis) %> |
+<%= link_to 'Back', energy_analyses_path %>

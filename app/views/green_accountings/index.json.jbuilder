@@ -1,0 +1,1 @@
+json.array! @green_accountings, partial: 'green_accountings/green_accounting', as: :green_accounting

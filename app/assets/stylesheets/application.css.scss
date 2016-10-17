@@ -1,0 +1,246 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "navbar";
+
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
+
+.logo{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    width: 50%;
+}
+.lead{
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 50px;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    color:#2e4c5d;
+}
+.heading {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 4em;
+    letter-spacing: .8em;
+
+
+}
+
+.circular-text{
+    color:#2e4c5d;
+}
+
+.email-field{
+
+    background-color: transparent;
+
+}
+
+.subscribe-top{
+    margin-top: 5vh;
+
+}
+
+.bg-1 {
+    font-family: 'PT Sans', sans-serif;
+	background: url('/assets/plain.jpeg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -62px;
+}
+
+.bg-2 {
+	
+    color:#555;
+    background-size:cover;
+    width: 100vw;
+    height: 40vh;
+}
+
+.mission-wrapper {
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 10vh;
+}
+.mission-heading{
+    font-size: 4em;
+    color: #2e4c5d;
+    margin-bottom: 5vh;
+}
+
+.mission{
+    margin-bottom: 5vh;
+}
+
+.bg-3 {
+    font-family: 'PT Sans', sans-serif;
+    background: url('/assets/slide5.jpeg') no-repeat center center fixed;
+    color:#555;
+    background-size:cover;
+    width: 100vw;
+    height: 70vh;
+    
+}
+
+.what-we-do-wrapper{
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 8vh;
+}
+
+
+.heading-what-do-we-do{
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #2e4c5d;
+    letter-spacing: .2em;
+    margin-bottom: 7vh;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+
+.bg-4{
+    background-color: #2e4c5d;
+    color:#555;
+    background-size:cover;
+    width: 100vw;
+    height: 80vh;
+    
+}
+
+.ems-wrapper{
+     padding-top: 10vh;
+}
+
+.ems-wrapper h1{
+    font-family: 'PT Sans', sans-serif;
+     color: #fff;
+     font-size: 4em;
+     text-transform: uppercase;
+     letter-spacing: .2em;
+     margin-bottom: 1vh;
+}
+
+.lead-ems{
+    font-family: 'PT Sans', sans-serif;
+     color: #fff;
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: .2em;
+     margin-top: 2vh;
+     margin-bottom: 3vh;
+}
+
+
+
+.bg-5 {
+    background: url('/assets/slide1.jpeg') no-repeat center center fixed;
+    color:#555;
+    background-size:cover;
+    width: 100vw;
+    height: 90vh;
+    
+}
+
+.team-lead{
+    font-family: 'PT Sans', sans-serif;
+    color: #2e4c5d;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size: 4em;
+    letter-spacing: .2em;
+
+
+}
+
+.the-team{
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 10vh;
+   
+}
+
+.the-team h3{
+    font-family: 'PT Sans', sans-serif;
+    color: #2e4c5d;
+    text-align: center;
+}
+
+.cv-box{
+    background: rgba(255, 255, 255, .5);
+    width: 260px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.portfolio-img {
+    height: 150px;
+    width: 150px;
+    
+    border-radius: 100%;
+    border: solid 4px #efefef;
+    
+}
+
+ .img-responsive{
+     margin: 0 auto;
+ }
+
+
+ .cv{
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+
+
+.contact-lead{
+    color: #2e4c5d;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
+
+footer{
+    font-family: 'PT Sans', sans-serif;
+    width: 100vw;
+    height: 30vh;
+    background-color: #2e4c5d;
+    margin-top: 10vh;
+}
+
+
+footer h3{
+    letter-spacing: .1em;
+    text-transform: capitalize;
+    text-align: center;
+    color : #fff;
+}
+
+footer p{
+    letter-spacing: .1em;
+    text-transform: capitalize;
+    text-align: center;
+    color : #fff;
+}
+.footer-links{
+    list-style: none;
+}

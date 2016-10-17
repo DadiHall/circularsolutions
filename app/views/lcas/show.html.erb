@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @lca.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @lca.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @lca.image %>
+</p>
+
+<%= link_to 'Edit', edit_lca_path(@lca) %> |
+<%= link_to 'Back', lcas_path %>

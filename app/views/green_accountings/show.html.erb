@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @green_accounting.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @green_accounting.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @green_accounting.image %>
+</p>
+
+<%= link_to 'Edit', edit_green_accounting_path(@green_accounting) %> |
+<%= link_to 'Back', green_accountings_path %>

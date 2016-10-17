@@ -1,0 +1,1 @@
+json.partial! "green_accountings/green_accounting", green_accounting: @green_accounting
