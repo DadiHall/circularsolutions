@@ -1,14 +1,34 @@
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'circularsolutions'
+set :repo_url, 'git@github.com:DadiHall/circularsolutions.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+ set :deploy_to, '/home/deploy/circularsolutions'
+
+
+
+set :linked_files, %w{config/database.yml config/secrets.yml config/application.yml}
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
+namespace :deploy do
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
+  end
+
+  after :publishing, 'deploy:restart'
+
+  after :finishing, 'deploy:cleanup'
+end  
+
 
 # Default value for :scm is :git
 # set :scm, :git
