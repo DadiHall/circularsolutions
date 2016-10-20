@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :green_accountings
   resources :energy_analyses
   devise_for :admin_users, ActiveAdmin::Devise.config
