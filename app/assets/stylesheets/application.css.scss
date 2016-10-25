@@ -22,6 +22,7 @@
 @import 'https://fonts.googleapis.com/css?family=PT+Sans';
 @import "font-awesome";
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .logo{
    display: block;
@@ -29,10 +30,10 @@
     margin-right: auto;
     margin-top: 30vh;
 
-    width: 60vw;
+    width: 40vw;
 }
 .lead{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 50px;
      margin-bottom: 40vh;
     text-transform: capitalize;
@@ -63,7 +64,7 @@
 }
 
 .bg-1 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 	background: url('/assets/plain.jpeg') no-repeat center center fixed;
     color:#fff;
     background-size:cover;
@@ -81,8 +82,9 @@
 }
 
 .mission-wrapper {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .mission-heading{
     font-size: 4em;
@@ -91,34 +93,53 @@
 }
 
 .mission{
-    font-size: 1.2em;
-    line-height: 1.3em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.mission-quote{
+    font-size: 1.7em;
+    line-height: 1.5em;
+    font-style: italic;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
 .bg-3 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: url('/assets/slide5.jpeg') no-repeat center center fixed;
     color:#555;
     background-size:cover;
     width: 100vw;
     height: 100%;
+    padding-bottom: 20vh;
     
 }
 
 .what-we-do-wrapper{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 8vh;
+}
+
+.panel-body p{
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: left;
+}
+
+.panel-title{
+    font-size: 2em;
+    color: #2e4c5d;
 }
 
 
 .heading-what-do-we-do{
-    font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     font-size: 4em;
     color: #2e4c5d;
-    letter-spacing: .2em;
+    letter-spacing: .4em;
     margin-bottom: 7vh;
     text-shadow: 1px 1px 2px #fff;
 }
@@ -164,6 +185,7 @@
 
 
 .bg-5 {
+    font-family: 'Roboto', sans-serif;
     background: url('/assets/slide1.jpeg') no-repeat center center fixed;
     color:#555;
     background-size:cover;
@@ -173,7 +195,6 @@
 }
 
 .team-lead{
-    font-family: 'PT Sans', sans-serif;
     color: #2e4c5d;
     text-align: center;
     margin-top: 10vh;
@@ -185,14 +206,13 @@
 }
 
 .the-team{
-    font-family: 'PT Sans', sans-serif;
     padding-top: 10vh;
     padding-bottom: 10vh;
    
 }
 
 .the-team h3{
-    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
     color: #2e4c5d;
     text-align: center;
 }
@@ -218,6 +238,8 @@
 
 
  .cv{
+    font-size: 1.5em;
+    line-height: 1.5em;
     margin-top: 30px;
     margin-bottom: 50px;
  }
@@ -281,14 +303,13 @@ footer p{
 
 .mission{
     text-align: center;
-    font-size: 1em;
-    line-height: 1.2em;
+   
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
 .bg-3 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: url('/assets/slide5.jpeg') no-repeat center center fixed;
     color:#555;
     background-size:cover;
@@ -309,15 +330,6 @@ footer p{
      border: none;
 }
 
-.heading-what-do-we-do{
-    font-family: 'PT Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5em;
-    color: #2e4c5d;
-    letter-spacing: .2em;
-    margin-bottom: 7vh;
-    text-shadow: 1px 1px 2px #fff;
-}
 
 .bg-4{
   
@@ -367,17 +379,6 @@ footer p{
  }
 
 
-.portfolio-img {
-    height: 100px;
-    width: 100px;
-
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
-    border-radius: 100%;
-    border: solid 4px #efefef;
-    
-}
 
 .team-lead{
   
