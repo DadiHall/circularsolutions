@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ems Footprints</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ems_footprints.each do |ems_footprint| %>
+      <tr>
+        <td><%= ems_footprint.title %></td>
+        <td><%= ems_footprint.body %></td>
+        <td><%= link_to 'Show', ems_footprint %></td>
+        <td><%= link_to 'Edit', edit_ems_footprint_path(ems_footprint) %></td>
+        <td><%= link_to 'Destroy', ems_footprint, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ems footprint', new_ems_footprint_path %>

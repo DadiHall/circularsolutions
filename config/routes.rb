@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :ems_footprints
+  resources :ems_reportings
+  resources :ems_green_acountings
   mount Ckeditor::Engine => '/ckeditor'
   resources :green_accountings
   resources :energy_analyses

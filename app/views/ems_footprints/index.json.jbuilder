@@ -1,0 +1,1 @@
+json.array! @ems_footprints, partial: 'ems_footprints/ems_footprint', as: :ems_footprint

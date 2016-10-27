@@ -24,6 +24,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
+
 .logo{
    display: block;
     margin-left: auto;
@@ -109,7 +111,7 @@
 
 .bg-3 {
     font-family: 'Roboto', sans-serif;
-    background: url('/assets/slide5.jpeg') no-repeat center center fixed;
+    background: url('/assets/plain.jpeg') no-repeat center center fixed;
     color:#555;
     background-size:cover;
     width: 100vw;
@@ -308,15 +310,6 @@ footer p{
     margin-bottom: 5vh;
 }
 
-.bg-3 {
-    font-family: 'Roboto', sans-serif;
-    background: url('/assets/slide5.jpeg') no-repeat center center fixed;
-    color:#555;
-    background-size:cover;
-    width: 100vw;
-    height: 100%;
-    
-}
 
 .what-we-do-wrapper{
     text-align: center;

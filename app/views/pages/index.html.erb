@@ -121,44 +121,53 @@
 
 	<p class="lead-ems">- Circular Solutions is working on a revolutionary green accounting program that helps firms to achieve their environmental performance goals. -
   <div class="row">
-	<div class="col-md-4 col-xs-12">
+      <% @ems_green_acountings.each do |ems_green_acounting| %>
+      <div class="col-md-4 col-xs-12">
 	           <div class="panel panel-default">
 	             <div class="panel-heading">
-	                <h3 class="panel-title">Green Accounting</h3>
+	                <h3 class="panel-title"><%=ems_green_acounting.title %></h3>
 	             </div>
 	                <div class="panel-body">
-	                    <p>Neutra chillwave small batch, tacos artisan listicle forage crucifix austin quinoa. Banjo mustache humblebrag keytar beard pinterest. Locavore austin keffiyeh, sriracha tbh 3 wolf moon kinfolk asymmetrical bespoke activated charcoal wolf kombucha flannel literally retro. Air plant tbh authentic poke. Woke activated charcoal chartreuse readymade biodiesel, fap kinfolk shoreditch bicycle rights squid air plant. Master cleanse cold-pressed hashtag lyft, jean shorts truffaut listicle art party. Hashtag copper mug beard man bun, lumbersexual coloring book hot chicken migas.</p>      
+	                     <p><%= truncate(ems_green_acounting.body, length: 250, :escape => false)  { link_to "Read More", ems_green_acounting_path(ems_green_acounting) } %></p>       
 	                </div>
 
 	                
 	            </div>
 	      </div>
+	      <% end %>
 
+
+	      <% @ems_reportings.each do |ems_reporting| %>
 	      <div class="col-md-4 col-xs-12">
 	           <div class="panel panel-default">
 	             <div class="panel-heading">
-	                <h3 class="panel-title">Green Accounting</h3>
+	                <h3 class="panel-title"><%= ems_reporting.title %></h3>
 	             </div>
 	                <div class="panel-body">
-	                    <p>Neutra chillwave small batch, tacos artisan listicle forage crucifix austin quinoa. Banjo mustache humblebrag keytar beard pinterest. Locavore austin keffiyeh, sriracha tbh 3 wolf moon kinfolk asymmetrical bespoke activated charcoal wolf kombucha flannel literally retro. Air plant tbh authentic poke. Woke activated charcoal chartreuse readymade biodiesel, fap kinfolk shoreditch bicycle rights squid air plant. Master cleanse cold-pressed hashtag lyft, jean shorts truffaut listicle art party. Hashtag copper mug beard man bun, lumbersexual coloring book hot chicken migas.</p>      
+	                   <p><%= truncate(ems_reporting.body, length: 250, :escape => false)  { link_to "Read More", ems_reporting_path(ems_reporting) } %></p>       
 	                </div>
 
 	                
 	            </div>
 	      </div>
 
+	      <% end %>
+
+	      <% @ems_footprints.each do |ems_footprint| %>
 	      <div class="col-md-4 col-xs-12">
 	           <div class="panel panel-default">
 	             <div class="panel-heading">
-	                <h3 class="panel-title">Green Accounting</h3>
+	                <h3 class="panel-title"><%= ems_footprint.title %></h3>
 	             </div>
 	                <div class="panel-body">
-	                    <p>Neutra chillwave small batch, tacos artisan listicle forage crucifix austin quinoa. Banjo mustache humblebrag keytar beard pinterest. Locavore austin keffiyeh, sriracha tbh 3 wolf moon kinfolk asymmetrical bespoke activated charcoal wolf kombucha flannel literally retro. Air plant tbh authentic poke. Woke activated charcoal chartreuse readymade biodiesel, fap kinfolk shoreditch bicycle rights squid air plant. Master cleanse cold-pressed hashtag lyft, jean shorts truffaut listicle art party. Hashtag copper mug beard man bun, lumbersexual coloring book hot chicken migas.</p>      
+	                   <p><%= truncate(ems_footprint.body, length: 250, :escape => false)  { link_to "Read More", ems_footprint_path(ems_footprint) } %></p>       
 	                </div>
 
 	                
 	            </div>
 	      </div>
+
+	      <% end %>
   </div>
 </div>
 

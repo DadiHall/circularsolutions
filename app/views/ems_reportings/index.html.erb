@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ems Reportings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ems_reportings.each do |ems_reporting| %>
+      <tr>
+        <td><%= ems_reporting.title %></td>
+        <td><%= ems_reporting.body %></td>
+        <td><%= link_to 'Show', ems_reporting %></td>
+        <td><%= link_to 'Edit', edit_ems_reporting_path(ems_reporting) %></td>
+        <td><%= link_to 'Destroy', ems_reporting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ems reporting', new_ems_reporting_path %>

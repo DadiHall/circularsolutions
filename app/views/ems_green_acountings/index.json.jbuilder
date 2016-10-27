@@ -1,0 +1,1 @@
+json.array! @ems_green_acountings, partial: 'ems_green_acountings/ems_green_acounting', as: :ems_green_acounting

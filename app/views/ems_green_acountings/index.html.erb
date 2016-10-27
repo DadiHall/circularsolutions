@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ems Green Acountings</h1>
+
+<table>
+  <thead>
+    <tr>
+    <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ems_green_acountings.each do |ems_green_acounting| %>
+      <tr>
+        <td><%= link_to 'Show', ems_green_acounting %></td>
+        <td><%= link_to 'Edit', edit_ems_green_acounting_path(ems_green_acounting) %></td>
+        <td><%= link_to 'Destroy', ems_green_acounting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ems green acounting', new_ems_green_acounting_path %>

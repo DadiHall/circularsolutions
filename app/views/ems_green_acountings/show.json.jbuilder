@@ -1,0 +1,1 @@
+json.partial! "ems_green_acountings/ems_green_acounting", ems_green_acounting: @ems_green_acounting

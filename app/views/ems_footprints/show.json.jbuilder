@@ -1,0 +1,1 @@
+json.partial! "ems_footprints/ems_footprint", ems_footprint: @ems_footprint

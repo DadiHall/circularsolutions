@@ -1,0 +1,2 @@
+module EmsReportingsHelper
+end

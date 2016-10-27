@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @ems_footprint.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @ems_footprint.body %>
+</p>
+
+<%= link_to 'Edit', edit_ems_footprint_path(@ems_footprint) %> |
+<%= link_to 'Back', ems_footprints_path %>

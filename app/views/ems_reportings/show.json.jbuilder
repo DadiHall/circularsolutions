@@ -1,0 +1,1 @@
+json.partial! "ems_reportings/ems_reporting", ems_reporting: @ems_reporting

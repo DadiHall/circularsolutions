@@ -1,0 +1,1 @@
+json.array! @ems_reportings, partial: 'ems_reportings/ems_reporting', as: :ems_reporting
