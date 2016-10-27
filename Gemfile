@@ -66,6 +66,11 @@ group :development do
   gem 'capistrano-rails'
 
   gem 'capistrano-rbenv'
+
+
+
+  gem 'rails_real_favicon'
+
   
 end
 
