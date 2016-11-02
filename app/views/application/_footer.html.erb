@@ -1,0 +1,34 @@
+<div class="container footer-wrap">
+  <div class="row">
+	<div class="col-xs-12 col-md-4">
+	<h3>Sign Up for Our Mailing List </h3>
+		<p>and we keep you posted</p>
+ 		<%= render 'emaillist/emaillist' %>
+
+ 	</div>
+
+ 	<div class="col-xs-12 col-md-4 text-center">
+	<h3> Follow us on </h3>
+
+		<%= link_to fa_icon("facebook"), "https://www.facebook.com/Circularsolutions.is/", class: 'icons' %>
+
+		<%= link_to fa_icon("twitter"), "https://www.facebook.com/Circularsolutions.is/", class: 'icons' %>
+
+ 	</div>
+
+ 	<div class="col-xs-12 col-md-4">
+	<h3> Navigate</h3>
+		<ul class="text-center footer-links">
+        <li><%=link_to "About", root_path(@root, :anchor => "about") %><span class="sr-only">(current)</span></li>
+        <li><%=link_to "Ems", root_path(@root, :anchor => "ems") %></li>
+        <li><%=link_to "Team", root_path(@root, :anchor => "team") %></li>
+        <li><%=link_to "Contact", root_path(@root, :anchor => "contact") %></li>
+
+
+       
+      </ul>
+ 	
+
+ 	</div>
+ </div>	
+</div>

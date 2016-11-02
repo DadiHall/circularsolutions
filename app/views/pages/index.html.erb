@@ -123,53 +123,17 @@
 
 	<p class="lead-ems">- Circular Solutions is working on a revolutionary green accounting program that helps firms to achieve their environmental performance goals. -
   <div class="row">
-      <% @ems_green_acountings.each do |ems_green_acounting| %>
-      <div class="col-md-4 col-xs-12">
-	           <div class="panel panel-default">
-	             <div class="panel-heading">
-	                <h3 class="panel-title"><%=ems_green_acounting.title %></h3>
-	             </div>
-	                <div class="panel-body">
-	                     <p><%= truncate(ems_green_acounting.body, length: 250, :escape => false)  { link_to "Read More", ems_green_acounting_path(ems_green_acounting) } %></p>       
+      <% @ems_texts.each do |ems_text| %>
+      <div class=" col-md-8 col-md-offset-2 col-xs-12">
+	          	           <hr class="">
+	                <div class="ems-text">
+	                     <p><%= truncate(ems_text.body, length: 500, :escape => false)  { link_to "Read More", ems_text_path(ems_text) } %></p>       
 	                </div>
-
-	                
-	            </div>
+      						<hr class="">
 	      </div>
 	      <% end %>
 
 
-	      <% @ems_reportings.each do |ems_reporting| %>
-	      <div class="col-md-4 col-xs-12">
-	           <div class="panel panel-default">
-	             <div class="panel-heading">
-	                <h3 class="panel-title"><%= ems_reporting.title %></h3>
-	             </div>
-	                <div class="panel-body">
-	                   <p><%= truncate(ems_reporting.body, length: 250, :escape => false)  { link_to "Read More", ems_reporting_path(ems_reporting) } %></p>       
-	                </div>
-
-	                
-	            </div>
-	      </div>
-
-	      <% end %>
-
-	      <% @ems_footprints.each do |ems_footprint| %>
-	      <div class="col-md-4 col-xs-12">
-	           <div class="panel panel-default">
-	             <div class="panel-heading">
-	                <h3 class="panel-title"><%= ems_footprint.title %></h3>
-	             </div>
-	                <div class="panel-body">
-	                   <p><%= truncate(ems_footprint.body, length: 250, :escape => false)  { link_to "Read More", ems_footprint_path(ems_footprint) } %></p>       
-	                </div>
-
-	                
-	            </div>
-	      </div>
-
-	      <% end %>
   </div>
 </div>
 
@@ -198,8 +162,9 @@
         <div class=" cv-box">
              <h3>Daði Hall, MSc</h3>
               <h5>CEO, Head Of Techincal Development & Co-Founder</h5>
-                <img src="/assets/BOS.jpg" class="portfolio-img img-responsive">
-                <p class="cv">Birgir holds a B.Sc. in environmental planning from the agricultural university of Iceland. The holds a M.Sc. degree from the University of Iceland where he studied at the Environment and Natural Resource program. He is now about to finish his Ph.D. from the University of Iceland where he has also taught LCA. His main areas of study has been within life cycle assessments of aquaculture and bio economy. Birgir is also an active member of the Icelandic search and rescue (SAR) team and can often be found in high altitudes.</p>
+                <img src="/assets/dadi.jpg" class="portfolio-img img-responsive">
+                <p class="cv">Coming from a background in graphic- and multimedia design, Daði holds an extensive experience in the field. He holds a B.Sc. in environmental planning from the agricultural university of Iceland and a M.Sc. degree from the University of Iceland where he studied at the Environment and Natural Resource program.
+				He is a skilled webprogrammer with an entrepreneur mindset. By using both his experience and education, Daði has led the developement of the web-application CircularEMS. </p>
         </div>
 </div>
 <div class="cv-wrap col-xs-12 col-md-6">
@@ -237,43 +202,6 @@
 </div>
 
 
-<footer>
 
-<div class="container">
-  <div class="row">
-	<div class="col-xs-12 col-md-4">
-	<h3>Sign Up for Our Mailing List </h3>
-		<p>and we keep you posted</p>
- 		<%= render 'emaillist/emaillist' %>
-
- 	</div>
-
- 	<div class="col-xs-12 col-md-4 text-center">
-	<h3> Follow us on </h3>
-
-		<%= link_to fa_icon("facebook"), "https://www.facebook.com/Circularsolutions.is/", class: 'icons' %>
-
-		<%= link_to fa_icon("twitter"), "https://www.facebook.com/Circularsolutions.is/", class: 'icons' %>
-
- 	</div>
-
- 	<div class="col-xs-12 col-md-4">
-	<h3> Navigate</h3>
-		<ul class="text-center footer-links">
-        <li><a href="#about">About <span class="sr-only">(current)</span></a></li>
-        <li><a href="#ems"> Ems</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#subscribe">Newsletter</a></li>
-
-
-       
-      </ul>
- 	
-
- 	</div>
- </div>	
-</div>
-</footer>
 
 

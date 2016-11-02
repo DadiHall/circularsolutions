@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ems_texts
   resources :ems_footprints
   resources :ems_reportings
   resources :ems_green_acountings

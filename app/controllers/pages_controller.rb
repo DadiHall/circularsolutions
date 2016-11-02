@@ -5,9 +5,8 @@ class PagesController < ApplicationController
   	@energy_analyses = EnergyAnalysis.all
   	@green_accountings = GreenAccounting.all
 
-  	@ems_green_acountings = EmsGreenAcounting.all
-  	@ems_reportings = EmsReporting.all
-  	@ems_footprints = EmsFootprint.all
+  	@ems_texts = EmsText.all
+  	
 
   	@contact = Contact.new
   end

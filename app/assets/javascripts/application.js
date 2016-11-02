@@ -20,7 +20,7 @@
 
 
 $(document).ready(function(){       
-   var scroll_start = -800;
+   var scroll_start = 0;
    var startchange = $('.nav');
    var offset = startchange.offset();
    $(document).scroll(function() { 

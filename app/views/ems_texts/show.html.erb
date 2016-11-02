@@ -1,21 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-<h3>
-  <%= @lca.title %>
-</h3>
-
-<br>
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
 <p>
-  <%= @lca.body.html_safe %>
+  
+  <%= @ems_text.body.html_safe %>
 </p>
 </div>
-
-
-
 </div>
-<%=link_to "Back", root_path(@root, :anchor => "about") %>
 
+
+<%=link_to "Back", root_path(@root, :anchor => "ems") %>
 </div>

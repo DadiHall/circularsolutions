@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ems Texts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ems_texts.each do |ems_text| %>
+      <tr>
+        <td><%= ems_text.body %></td>
+        <td><%= link_to 'Show', ems_text %></td>
+        <td><%= link_to 'Edit', edit_ems_text_path(ems_text) %></td>
+        <td><%= link_to 'Destroy', ems_text, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ems text', new_ems_text_path %>
