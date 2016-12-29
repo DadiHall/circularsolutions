@@ -1,30 +1,56 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <a class="navbar-brand" href="#"><img src="assets/logo.svg"></a>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!--<a class="navbar-brand" href="#">Circular</a>-->
     </div>
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%=link_to "About", root_path(@root, :anchor => "about") %><span class="sr-only">(current)</span></li>
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Life Cycle Assessment", lca_path(@lcas) %></li>
+                <li><%= link_to "Energy Analysis", lca_path(@lcas) %></li>
+                <li><%= link_to "Green Accounting", lca_path(@lcas) %></li>
+                <li class="divider"></li>
+                <li><a href="#">Something</a></li>
+                <li class="divider"></li>
+                <li><a href="#">something</a></li>
+                </ul>
+                </li>
+
+                <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "EnvoCalc", lca_path(@lcas) %></li>
+                <li><%= link_to "ReZapp", root_path %></li>
+                
+                </ul>
+                </li>
+      <li><%=link_to "About", root_path(@root, :anchor => "about") %><span class="sr-only">(current)</span></li>
         <li><%=link_to "Ems", root_path(@root, :anchor => "ems") %></li>
         <li><%=link_to "Team", root_path(@root, :anchor => "team") %></li>
         <li><%=link_to "Contact", root_path(@root, :anchor => "contact") %></li>
-      
-
-
-       
-      </ul>
-      
-     
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </ul>
+  </div><!-- /.navbar-collapse -->
 </nav>
+
+<script type="text/javascript">
+  
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+
+</script>

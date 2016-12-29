@@ -1,39 +1,43 @@
-/** NAVBAR **/
-
-.navbar {
-transition-duration: 1s;
+.navbar-right{
+  margin-top: -20px;
+  margin-right: 20px;
 }
 
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border: none;
-   border-color: transparent;
-}
 
-.navbar li a{ 
-color: #fff; 
+  .navbar-brand img {
+    max-height: 80px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .navbar-default.shrink .navbar-brand img {
+      max-height: 50px; }
 
-} 
-
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
+  @media (max-width: 767px) {
+    .navbar-brand {
+      float: none;
+      display: inline-block;
+      padding: 0 15px;   }
+      .navbar-brand img {
+        max-height: 45px;
+        display: inline-block;
+        margin: 15px auto;   }
 }
 
 .navbar-default .navbar-nav > li > a {
-   
-    color: #2e4c5d;
-    letter-spacing: .2em;
+  line-height: 40px;
+  -webkit-transition: line-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: line-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: line-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: line-height 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+  @media (max-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+      line-height: initial;   }
 }
+.navbar-default.shrink .navbar-nav > li > a {
+  line-height: 20px; }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-   
-    color: #555;
+@media (max-width: 767px) {
+  .navbar-default .navbar-toggle {
+    margin: 20px 8px;   }
 }

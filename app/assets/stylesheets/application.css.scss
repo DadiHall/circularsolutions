@@ -65,15 +65,7 @@
 
 }
 
-.bg-1 {
-    font-family: 'Roboto', sans-serif;
-	background: url('/assets/plain.jpeg') no-repeat center center fixed;
-    color:#fff;
-    background-size:cover;
-    width: 100vw;
-    height: 100%;
-    margin-top: -62px;
-}
+
 
 .bg-2 {
 	
@@ -83,10 +75,11 @@
     height: 100%;
 }
 
+
 .mission-wrapper {
     font-family: 'Roboto', sans-serif;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .mission-heading{
     font-size: 4em;
@@ -95,13 +88,16 @@
 }
 
 .mission{
-    font-size: 1.2em;
+    color: #2e4c5d;
+    text-align: center;
+    font-size: 2em;
     line-height: 1.5em;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
 .mission-quote{
+    text-align: center;
     font-size: 1.2em;
     line-height: 1.5em;
     font-style: italic;
@@ -111,40 +107,29 @@
 
 .bg-3 {
     font-family: 'Roboto', sans-serif;
-    background: url('/assets/plain.jpeg') no-repeat center center fixed;
-    color:#555;
-    background-size:cover;
-    width: 100vw;
-    height: 100%;
-    padding-bottom: 20vh;
+    background-color: #377391;
+  
+    
+    height: 50vh;
+    
     
 }
 
-.what-we-do-wrapper{
-    font-family: 'Roboto', sans-serif;
-    padding-top: 8vh;
+.icons{
+    color: #ff9b28;
+    border-radius: 150px;
+    border: 15px solid #ff9b28;
+    font-size: 7em;
+    padding: 50px;
 }
 
-.panel-body p{
-    font-size: 1.2em;
-    line-height: 1.5em;
-    text-align: left;
-}
+
 
 .panel-title{
-    font-size: 1.8em;
-    color: #2e4c5d;
+    font-size: 2.5em;
+    color: #ff9b28;
 }
 
-
-.heading-what-do-we-do{
-    text-transform: uppercase;
-    font-size: 4em;
-    color: #2e4c5d;
-    letter-spacing: .4em;
-    margin-bottom: 7vh;
-    text-shadow: 1px 1px 2px #fff;
-}
 
 
 .bg-4{
