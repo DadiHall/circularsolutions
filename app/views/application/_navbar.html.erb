@@ -19,9 +19,15 @@
       <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Life Cycle Assessment", lca_path(@lcas) %></li>
-                <li><%= link_to "Energy Analysis", lca_path(@lcas) %></li>
-                <li><%= link_to "Green Accounting", lca_path(@lcas) %></li>
+              <% @lcas.each do |lca| %>
+                <li><%= link_to lca.title, lca_path(lca) %></li>
+              <% end %>
+               <% @energy_analyses.each do |energy_analysis| %>
+                <li><%=link_to energy_analysis.title, energy_analysis_path(energy_analysis)  %></li>
+               <% end %> 
+               <% @green_accountings.each do |green_accounting| %>
+                <li><%= link_to green_accounting.title, green_accounting_path(green_accounting) %></li>
+                <% end %>
                 <li class="divider"></li>
                 <li><a href="#">Something</a></li>
                 <li class="divider"></li>
@@ -32,15 +38,23 @@
                 <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><%= link_to "EnvoCalc", lca_path(@lcas) %></li>
+                <li><%= link_to "EnvoCalc", root_path %></li>
                 <li><%= link_to "ReZapp", root_path %></li>
                 
                 </ul>
                 </li>
-      <li><%=link_to "About", root_path(@root, :anchor => "about") %><span class="sr-only">(current)</span></li>
-        <li><%=link_to "Ems", root_path(@root, :anchor => "ems") %></li>
-        <li><%=link_to "Team", root_path(@root, :anchor => "team") %></li>
-        <li><%=link_to "Contact", root_path(@root, :anchor => "contact") %></li>
+      <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Employess", root_path %></li>
+                <li><%= link_to "Our Vision", root_path %></li>
+                <li><%= link_to "Our Story", root_path %></li>
+                <li><%= link_to "Career", root_path %></li>
+                
+                </ul>
+                </li>
+        
+        <li><%=link_to "Contact", new_contact_path %></li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>

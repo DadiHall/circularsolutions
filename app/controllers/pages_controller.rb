@@ -10,4 +10,19 @@ class PagesController < ApplicationController
 
   	@contact = Contact.new
   end
+
+  def lca
+
+  end
+
+  def green_acounting
+
+  end
+
+  def energyanalyses
+
+  end
+
+
+
 end

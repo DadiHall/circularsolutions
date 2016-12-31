@@ -1,5 +1,7 @@
 class LcasController < InheritedResources::Base
 
+	
+
   private
 
     def lca_params

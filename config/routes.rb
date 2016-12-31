@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   resources :lcas
   root 'pages#index'
 
+  get 'pages/lca' =>'pages#lca'
+  get 'pages/energyanalyses' => 'pages#energyanalyses'
+  get 'pages/green_acounting' => 'pages#green_acounting'
+
   resources :contacts, only: [:new, :create]
 
   # The priority is based upon order of creation: first created -> highest priority.
