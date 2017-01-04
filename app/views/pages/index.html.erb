@@ -210,21 +210,21 @@
 
 	<p class="lead-ems">- Circular Solutions is working on a revolutionary green accounting program that helps firms to achieve their environmental performance goals. -
   <div class="row">
-      <% @ems_texts.each do |ems_text| %>
+      <%# @ems_texts.each do |ems_text| %>
       <div class=" col-md-8 col-md-offset-2 col-xs-12">
 	          	           <hr class="">
 	                <div class="ems-text">
-	                     <p><%= truncate(ems_text.body, length: 500, :escape => false)  { link_to "Read More", ems_text_path(ems_text) } %></p>       
+	                     <p><%#= truncate(ems_text.body, length: 500, :escape => false)  { link_to "Read More", ems_text_path(ems_text) } %></p>       
 	                </div>
       						<hr class="">
 	      </div>
-	      <% end %>
+	      <%# end %>
 
 
   </div>
 </div>
 
-</div>
+</div> -->
 
 
 
