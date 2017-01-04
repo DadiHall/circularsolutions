@@ -1,4 +1,4 @@
 class Lca < ActiveRecord::Base
 
-	validates :title, :body
+	validates :title, :body => true
 end
