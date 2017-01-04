@@ -1,4 +1,4 @@
-ActiveAdmin.register GreenAccounting do
+ActiveAdmin.register GreenAccounting, as: "GreenAccount" do
 
 permit_params :title, :body, :image
 

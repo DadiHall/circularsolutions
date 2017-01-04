@@ -1,4 +1,4 @@
-ActiveAdmin.register Lca do
+ActiveAdmin.register Lca, as: "LCA" do
 
 permit_params :title, :body, :image
 

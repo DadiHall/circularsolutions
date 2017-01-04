@@ -1,4 +1,4 @@
-ActiveAdmin.register EnergyAnalysis do
+ActiveAdmin.register EnergyAnalysis, as: "EnergyAnal" do
 
 permit_params :title, :body, :image
 
