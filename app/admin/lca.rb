@@ -1,4 +1,4 @@
-ActiveAdmin.register Lca, as: "LCA" do
+ActiveAdmin.register Lca, as: "LifeCycleAssesm" do
 
 permit_params :title, :body, :image
 
