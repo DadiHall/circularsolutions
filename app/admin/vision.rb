@@ -1,4 +1,4 @@
-ActiveAdmin.register Vision do
+ActiveAdmin.register Vision, as: "Our Vision" do
 
 permit_params :title, :body, :image
 
