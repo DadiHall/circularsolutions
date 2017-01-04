@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :ems_footprints
   resources :ems_reportings
   resources :ems_green_acountings
+  resources :visions
   mount Ckeditor::Engine => '/ckeditor'
   resources :green_accountings
   resources :energy_analyses
@@ -12,9 +13,8 @@ Rails.application.routes.draw do
   resources :lcas
   root 'pages#index'
 
-  get 'pages/lca' =>'pages#lca'
-  get 'pages/energyanalyses' => 'pages#energyanalyses'
-  get 'pages/green_acounting' => 'pages#green_acounting'
+  get 'pages/employees' =>'pages#employees'
+  
 
   resources :contacts, only: [:new, :create]
 

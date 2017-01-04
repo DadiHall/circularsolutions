@@ -1,21 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
+
+<br>
+<br>
+<br>
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
 <h3>
   <%= @green_accounting.title %>
 </h3>
 
 <br>
-<div class="row">
-<div class="col-md-8 col-md-offset-2">
+
 <p>
   <%= @green_accounting.body.html_safe %>
 </p>
+
+<br>
+
+<%=link_to "Back", root_path %>
 </div>
 
 
 
 </div>
-<%=link_to "Back", root_path(@root, :anchor => "about") %>
+
 
 </div>

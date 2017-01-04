@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
      @lcas = Lca.all
      @energy_analyses = EnergyAnalysis.all
      @green_accountings = GreenAccounting.all
+
+     @visions = Vision.all
     end
 
    

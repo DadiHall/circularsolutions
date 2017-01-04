@@ -2,7 +2,8 @@
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="assets/logo.svg"></a>
+    <%= link_to image_tag("logo.svg", alt: "logo"), root_path, class: 'navbar-brand' %>
+      
       <!-- Brand and toggle get grouped for better mobile display -->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -46,8 +47,10 @@
       <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Employess", root_path %></li>
-                <li><%= link_to "Our Vision", root_path %></li>
+                <li><%= link_to "Employess", pages_employees_path %></li>
+                  <% @visions.each do |vision| %>
+                <li><%= link_to vision.title, vision_path(vision) %></li>
+                <% end %>
                 <li><%= link_to "Our Story", root_path %></li>
                 <li><%= link_to "Career", root_path %></li>
                 

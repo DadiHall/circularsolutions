@@ -19,6 +19,8 @@
 
 @import "navbar";
 
+@import "employees";
+
 @import 'https://fonts.googleapis.com/css?family=PT+Sans';
 @import "font-awesome";
 
@@ -96,14 +98,7 @@
     margin-bottom: 5vh;
 }
 
-.mission-quote{
-    text-align: center;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    font-style: italic;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
+
 
 .bg-3 {
     font-family: 'Roboto', sans-serif;
