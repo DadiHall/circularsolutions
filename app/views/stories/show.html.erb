@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+
+<br>
+<br>
+<br>
+
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<h3>
+  <%= @story.title %>
+</h3>
+
+<p>
+  
+  <%= @story.body.html_safe %>
+</p>
+
+
+<br>
+<%=link_to "Back", root_path %>
+
+</div>
+
+
+
+</div>
+
+
+</div>

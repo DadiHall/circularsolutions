@@ -51,7 +51,9 @@
                   <% @visions.each do |vision| %>
                 <li><%= link_to vision.title, vision_path(vision) %></li>
                 <% end %>
-                <li><%= link_to "Our Story", root_path %></li>
+                <% @stories.each do |story| %>
+                <li><%= link_to story.title, story_path(story) %></li>
+                <% end %>
                 <li><%= link_to "Career", root_path %></li>
                 
                 </ul>

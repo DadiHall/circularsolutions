@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
      @green_accountings = GreenAccounting.all
 
      @visions = Vision.all
+     @stories = Story.all
     end
 
    
